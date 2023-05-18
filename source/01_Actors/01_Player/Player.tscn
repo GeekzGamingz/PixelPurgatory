@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bb4pv6q2waagd"]
+
+[ext_resource type="Texture2D" uid="uid://c6y82sa7flwsl" path="res://assets/06_WalkSW.png" id="1_sg0fb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nmy0h"]
+radius = 2.0
+height = 24.0
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_sg0fb")
+hframes = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_nmy0h")
